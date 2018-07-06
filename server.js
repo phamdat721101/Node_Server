@@ -1,6 +1,7 @@
 const express=require('express');
 const hbs=require('hbs');
 const fs=require('fs');
+const port=process.env.PORT||3000;
 var app=express();
 app.use(function(req,res,next){
 	var now=new Date().toString();
@@ -36,6 +37,6 @@ app.get('/bad',function(req,res){
 		errorMessage:'Unable to handle request'
 	});
 });
-app.listen(3000,function(){
-	console.log("The port is 3000");
+app.listen(port,function(){
+	console.log(`The port is ${port}`);
 });

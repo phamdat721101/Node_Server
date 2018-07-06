@@ -1,0 +1,6 @@
+-How to create the route for node js
+  +First, creating the "public" file to store the html 
+  +Second, creating the "views" file to store "hbs" file->then use render to get the interface from hbs
+  +Third, using partial to inherit the data from hbs, it means you do not need to write many time the interface
+-How to store the data with git
+  +Open github, then create new res...->follow the instruction.
